@@ -14,10 +14,14 @@
 
 </head>
 <body>
+	<div id="wrapper">
+	
 	{% block content %}
 	Main content
 	{% endblock content %}
-
+	
+	</div>
+	
 	{% block scripts %}
 	<script src="//code.jquery.com/jquery.min.js"></script>
 	<script src="{% static '/js/main.js' %}"></script>
