@@ -10,6 +10,8 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 .group:after { clear: both;}
 .group { zoom: 1;}
 
+/* end reset */
+
 body {
 	font:16px/1 "Helvetica Neue",Helvetica,Arial,sans-serif;
 	-webkit-font-smoothing:antialiased;
@@ -38,15 +40,6 @@ a {
 	height: 100%;
 }
 
-/* Link to Documentation */
-a#documentation {
-	position: fixed; top: 11px; right: 9px;
-	background: #5badf0; color: #fff;
-	padding: 8px 12px;
-	font-size: 13px; font-weight: bold; line-height: 1.35;
-	border-radius: 3px; z-index: 100;
-}
-
 /* Horizontally and vertically centers the text */
 .center {
 	margin: 0 auto;
@@ -56,9 +49,4 @@ a#documentation {
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
-}
-
-#badge {
-	position: absolute; bottom: 10px; right: 10px;
-	height: 48px; width: 48px;
 }
