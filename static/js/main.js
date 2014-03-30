@@ -31,6 +31,8 @@ function retina() {
 		
 		$(image).attr("src", path);
 	});
-};
- 
-$(document).ready(retina);
+}; 
+
+$(document).ready(function() {
+	retina();
+});

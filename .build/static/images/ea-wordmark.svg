@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="tiny" x="0px" y="0px" viewBox="0 0 348.7 38.9" xml:space="preserve">
+
+<style>
+	* {
+		stroke:	#777572;		
+	}
+
+	.style0 {
+		stroke-linejoin: round;
+		stroke-linecap:	round;
+		stroke-miterlimit: 10;
+		fill: none;
+	}
+	
+	.style1 {
+		stroke-width: 2;
+		stroke-linecap: round;
+		stroke-miterlimit: 10;
+		fill: none;
+	}
+	
+	.style2 {
+		stroke-linecap:	round;
+		stroke-miterlimit: 10;
+		fill: none;
+	}
+</style>
+
+<g display="none"><line display="inline" x1="216.1" y1="145.6" x2="288.1" y2="46.5" class="style0"/><polyline display="inline" points="396.6,46.5 360.6,96 396.6,145.6" class="style0"/><line display="inline" x1="229.3" y1="127.8" x2="288.1" y2="127.8" class="style0"/><line display="inline" x1="360.6" y1="128.1" x2="383.6" y2="128.1" class="style0"/><g display="inline"><polyline points="349.6,46.5 313.6,96 349.6,145.6" class="style0"/><line x1="313.6" y1="128.1" x2="336.6" y2="128.1" class="style0"/></g></g><g><polyline display="none" points="108.6,-142.4 72.6,-106.4 108.6,-70.4 144.6,-142.4 180.6,-70.4" class="style1"/><polyline display="none" points="297.6,-142.4 261.6,-106.4 297.6,-70.4 333.6,-142.4 369.6,-70.4" class="style1"/><polyline display="none" points="72.6,-70.4 36.6,-142.4 0.6,-70.4" class="style1"/><circle display="none" cx="216.6" cy="-106.4" r="36" class="style1"/><polyline points="199.8,1.1 172.2,19.5 199.8,37.9 218.2,1.1 236.6,37.9" class="style2"/><polyline points="305.7,1.1 278.1,19.5 305.7,37.9 324.2,1.1 342.6,37.9" class="style2"/><polyline points="172.2,37.9 153.7,1.1 135.3,37.9" class="style2"/><circle cx="255.1" cy="19.5" r="18.4" class="style2"/><g><polyline points="28.2,1.1 0.6,1.1 0.6,37.9 28.2,37.9" class="style2"/><line x1="0.6" y1="19.5" x2="19" y2="19.5" class="style2"/></g><g><path d="M37.4 37.9V1.1c0 0 27.6-4.6 27.6 13.8 c0 7.1-9.2 12.6-13.8 12.6" class="style2"/><line x1="65.1" y1="37.9" x2="51.2" y2="27.5" class="style2"/></g><line x1="74.3" y1="1.1" x2="74.3" y2="37.9" class="style2"/><path d="M111.1 1.1c0 0-27.6-4.6-27.6 18.4 s27.6 18.4 27.6 18.4" class="style2"/></g></svg>
