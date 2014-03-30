@@ -5,16 +5,31 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width">
 
+	<script type="text/javascript" src="//use.typekit.net/rpf5aer.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
 	<link rel="shortcut icon" href="{% static '/images/favicon.ico' %}">
 	<link rel="stylesheet" href="{% static '/css/style.css' %}">
+	<link rel="stylesheet" href="{% static '/css/eastyle.scss' %}">
 
 	{% block header %}
-	<title>{% block title %}Eric Akaoka, Designer.{% endblock %}</title>
+	<title>{% block title %}Eric Akaoka{% endblock %}</title>
 	{% endblock header %}
 
 </head>
-<body>
+<body class="tk-jubilat">
 	<div id="wrapper">
+	
+	{% block sidebar %}
+	<section id="sidebar">
+		<h1>Eric Akaoka</h1>
+		<p>I'm a designer from Toronto.</p>
+		<p>Here are some things I've worked on.</p>
+		<p>&nbsp;</p>
+		<p><a href="http://twitter.com/akaoka">Follow me</a> on Twitter or <a href="mailto:eric@ericakaoka.com">email me</a>.</p>
+	</section>
+	{% endblock sidebar %}
+
 	
 	{% block content %}
 	Main content
