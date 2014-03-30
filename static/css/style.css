@@ -79,13 +79,12 @@ a {
   position: absolute; }
 
 #maincontent {
-  width: 4000px;
   text-align: center;
   overflow: auto; }
   #maincontent .project {
     float: left;
-    width: 800px;
-    height: 800px;
+    width: 200px;
+    height: 200px;
     box-sizing: border-box;
     border: 1px solid #eee; }
 
