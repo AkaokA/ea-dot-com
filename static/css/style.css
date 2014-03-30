@@ -58,12 +58,13 @@ h1 {
   line-height: 2; }
 
 h2 {
-  font-size: 96pt;
-  font-weight: 800;
-  line-height: 2; }
+  font-size: 24pt;
+  font-weight: 300;
+  line-height: 2;
+  text-transform: uppercase; }
 
 p {
-  line-height: 1.4; }
+  line-height: 1.8; }
 
 strong {
   font-weight: 800;
@@ -72,6 +73,15 @@ strong {
 a {
   text-decoration: none;
   color: #5badf0; }
+
+.lnum {
+  font-variant-numeric: lining-nums;
+  -moz-font-feature-settings: "lnum" 1;
+  -moz-font-feature-settings: "lnum=1";
+  -ms-font-feature-settings: "lnum" 1;
+  -o-font-feature-settings: "lnum" 1;
+  -webkit-font-feature-settings: "lnum" 1;
+  font-feature-settings: "lnum" 1; }
 
 #sidebar {
   /* 	display: none; */
