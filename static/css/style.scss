@@ -59,7 +59,7 @@ h2 {
 
 p {
 	line-height: 1.6;
-	margin-bottom: 0.8
+	margin-bottom: 12pt;
 }
 
 strong {
@@ -77,14 +77,11 @@ a {
 	top: 0;
 	left: 0;
 	max-width: 320px;
-	margin: 0px;
-	padding: 20px;
+	padding: 10px;
 	background-color: rgba(255,255,255,0.9);
 	@include border-radius(2px);
 	
-	#wordmark {
-		margin-bottom: 16pt;
-		
+	#wordmark {		
 		line, polyline {
 			stroke: red;
 		}
@@ -97,23 +94,61 @@ a {
 	height: 100%;
 }
 
-.project {
-	width: 400px;
-	margin: 20px auto;
-	text-align: center;	
-	-webkit-perspective: 2000px;
+#projectcontainer {
+	position: relative;
+	margin: 0 auto;
+	width: 960px;
 
-	figure {
-		-webkit-transform: rotateX(40deg) rotateY(20deg) rotateZ(-20deg) scale3d(0.8,0.8,0.8);
-		-webkit-transform-style: preserve-3d;
-		transform-style: preserve-3d;
-		
-		@include transition( all 0.4s cubic-bezier(0.19, 1, 0.22, 1) );
-		
-	}
+	.project {
+		height: 100%;
+		-webkit-perspective: 1600px;
 	
-	&:hover figure {
-		-webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(1,1,1);
-	}
+		figure {
+			@include transform( rotateX(40deg) rotateY(20deg) rotateZ(-20deg) scale3d(0.5,0.5,0.5) );
+			-webkit-transform-style: preserve-3d;
+			transform-style: preserve-3d;
+			@include transition( all 0.5s cubic-bezier(0.19, 1, 0.22, 1) );
+			
+			&#ipad {
+				@include transform( translateX(-50px) rotateX(40deg) rotateY(20deg) rotateZ(-20deg) scale3d(0.5,0.5,0.5) );
+			}	
+		}
+		&:hover figure {
+			@include transform( rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(0.8,0.8,0.8) );
+		}
+		&:hover figure#ipad {
+			@include transform( translateX(-100px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(0.75,0.75,0.75) );
+		}
 
+	
+		h2 {
+			position: absolute;
+			top: 50%;
+			margin-top: -132px;
+			left: 576px;
+			@include transition( all 0.6s cubic-bezier(0.19, 1, 0.22, 1) );
+		}
+		&:hover h2 {
+			@include transform( translate(100px,-116px) )
+		}
+	
+		summary {
+			width: 280px;
+			position: absolute;
+			top: 50%;
+			margin-top: -80px;
+			left: 576px;
+			opacity: 0;
+			
+			-webkit-transform-origin: top center;
+			@include transform( rotateX(-90deg) );
+			@include transition( all 0.7s cubic-bezier(0.19, 1, 0.22, 1) );
+		}
+		&:hover summary {
+			opacity: 1;
+			@include transform( translate(100px,-100px) rotateX(0) )
+		}
+	
+	}	
 }
+
