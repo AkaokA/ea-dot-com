@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="tiny" xml:space="preserve"
-	width="208px" height="24px" x="0px" y="0px" viewBox="0 -1 346 40" >
+	width="190px" height="24px" x="0px" y="0px" viewBox="-1 -2 348 44" >
 
 	<style>
 		.segment {
@@ -45,7 +45,7 @@
 		<!-- R -->
 		<g>
 			<path d="M37.4 37.9V1.1c0 0 27.6-4.6 27.6 13.8 c0 7.1-9.2 12.6-13.8 12.6" class="segment"/>
-			<line x1="65.1" y1="37.9" x2="51.2" y2="27.5" class="segment"/>
+			<line x2="65.1" y2="37.9" x1="53.5" y1="27" class="segment"/>
 		</g>
 		
 		<!-- I -->
