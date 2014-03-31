@@ -96,9 +96,9 @@ a {
 #projectcontainer {
   position: relative;
   margin: 0 auto;
-  width: 960px; }
+  width: 960px;
+  padding-bottom: 100px; }
   #projectcontainer .project {
-    height: 800px;
     -webkit-perspective: 1600px; }
     #projectcontainer .project figure {
       -webkit-transform: rotateX(40deg) rotateY(20deg) rotateZ(-20deg) scale3d(0.5, 0.5, 0.5);
@@ -107,10 +107,10 @@ a {
       transform: rotateX(40deg) rotateY(20deg) rotateZ(-20deg) scale3d(0.5, 0.5, 0.5);
       -webkit-transform-style: preserve-3d;
       transform-style: preserve-3d;
-      -webkit-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-      -moz-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-      -ms-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-      transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1); }
+      -webkit-transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+      -moz-transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+      -ms-transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+      transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1); }
       #projectcontainer .project figure#ipad {
         -webkit-transform: translateX(-50px) rotateX(40deg) rotateY(20deg) rotateZ(-20deg) scale3d(0.5, 0.5, 0.5);
         -moz-transform: translateX(-50px) rotateX(40deg) rotateY(20deg) rotateZ(-20deg) scale3d(0.5, 0.5, 0.5);
@@ -131,10 +131,10 @@ a {
       top: 50%;
       margin-top: -132px;
       left: 576px;
-      -webkit-transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
-      -moz-transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
-      -ms-transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
-      transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1); }
+      -webkit-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+      -moz-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+      -ms-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+      transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1); }
     #projectcontainer .project:hover h2 {
       -webkit-transform: translate(100px, -116px);
       -moz-transform: translate(100px, -116px);
@@ -152,10 +152,10 @@ a {
       -moz-transform: rotateX(-90deg);
       -ms-transform: rotateX(-90deg);
       transform: rotateX(-90deg);
-      -webkit-transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
-      -moz-transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
-      -ms-transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
-      transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1); }
+      -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+      -moz-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+      -ms-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+      transition: all 1s cubic-bezier(0.19, 1, 0.22, 1); }
     #projectcontainer .project:hover summary {
       opacity: 1;
       -webkit-transform: translate(100px, -100px) rotateX(0);
