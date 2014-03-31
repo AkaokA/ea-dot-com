@@ -62,12 +62,16 @@ p {
 
 strong {
 	font-weight: 800;
-	color: #444;
 }
 
 a {
+	font-weight: 600;
 	text-decoration: none;
-	color: #5badf0;
+	color: #777572;
+
+	&:hover {
+		border-bottom: 1px solid #777572;
+	}
 }
 
 #sidebar {
@@ -78,11 +82,10 @@ a {
 	padding: 20px;
 	background-color: rgba(255,255,255,0.9);
 	@include border-radius(2px);
-	
-	#wordmark {		
-		line, polyline {
-			stroke: red;
-		}
+
+	&:hover svg .segment {
+		-webkit-animation: dash 2s ease-in-out 1 alternate;
+		animation: dash 2s ease-in-out 1 alternate;
 	}
 }
 
@@ -99,6 +102,7 @@ a {
 
 	.project {
 		-webkit-perspective: 1600px;
+		perspective: 1600px;
 	
 		figure {
 			@include transform( rotateX(40deg) rotateY(20deg) rotateZ(-20deg) scale3d(0.5,0.5,0.5) );
@@ -137,6 +141,7 @@ a {
 			opacity: 0;
 			
 			-webkit-transform-origin: top center;
+			transform-origin: top center;
 			@include transform( rotateX(-90deg) );
 			@include transition( all 1s cubic-bezier(0.19, 1, 0.22, 1) );
 		}
@@ -153,7 +158,9 @@ a {
 		text-align: center;
 		
 		p {
-			font-size: 10pt;
+			position: relative;
+			top: 50%;
+			font-size: 8pt;
 		}
 	}
 }

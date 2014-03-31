@@ -1,47 +1,69 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="tiny"
-	width="208px" height="24px"
-	x="0px" y="0px" viewBox="0 -1 346 40" 
-	xml:space="preserve">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="tiny" xml:space="preserve"
+	width="208px" height="24px" x="0px" y="0px" viewBox="0 -1 346 40" >
 
 	<style>
-		.style1 {
+		.segment {
 			stroke:	#777572;		
 			fill: none;
 			stroke-width: 2.5;
 			stroke-linecap: round;
 			stroke-miterlimit: 10;
+		
+			stroke-dasharray: 90;
+			stroke-dashoffset: 90;
+
+			-webkit-animation: dash 2s ease-in-out 1;
+			animation: dash 2s ease-in-out 1;
+			-webkit-animation-fill-mode: forwards;
+			animation-fill-mode: forwards;
 		}
+		
+		.o, .ka {
+			stroke-dasharray: 150;
+			stroke-dashoffset: 150;
+		}
+
+		@-webkit-keyframes dash {
+			to {
+				stroke-dashoffset: 0;
+			}
+		}		
+		@keyframes dash {
+			to {
+				stroke-dashoffset: 0;
+			}
+		}		
 	</style>
 	
 	<g>
 		<!-- E -->
 		<g>
-			<polyline points="28.2,1.1 0.6,1.1 0.6,37.9 28.2,37.9" class="style1"/>
-			<line x1="0.6" y1="19.5" x2="19" y2="19.5" class="style1"/>
+			<polyline points="28.2,1.1 0.6,1.1 0.6,37.9 28.2,37.9" class="segment"/>
+			<line x1="0.6" y1="19.5" x2="19" y2="19.5" class="segment"/>
 		</g>
 		
 		<!-- R -->
 		<g>
-			<path d="M37.4 37.9V1.1c0 0 27.6-4.6 27.6 13.8 c0 7.1-9.2 12.6-13.8 12.6" class="style1"/>
-			<line x1="65.1" y1="37.9" x2="51.2" y2="27.5" class="style1"/>
+			<path d="M37.4 37.9V1.1c0 0 27.6-4.6 27.6 13.8 c0 7.1-9.2 12.6-13.8 12.6" class="segment"/>
+			<line x1="65.1" y1="37.9" x2="51.2" y2="27.5" class="segment"/>
 		</g>
 		
 		<!-- I -->
-		<line x1="74.3" y1="1.1" x2="74.3" y2="37.9" class="style1"/>
+		<line x1="74.3" y1="1.1" x2="74.3" y2="37.9" class="segment"/>
 		
 		<!-- C -->
-		<path d="M111.1 1.1c0 0-27.6-4.6-27.6 18.4 s27.6 18.4 27.6 18.4" class="style1"/>
+		<path d="M111.1 1.1c0 0-27.6-4.6-27.6 18.4 s27.6 18.4 27.6 18.4" class="segment"/>
 
 		<!-- A -->
-		<polyline points="172.2,37.9 153.7,1.1 135.3,37.9" class="style1"/>
+		<polyline points="172.2,37.9 153.7,1.1 135.3,37.9" class="segment"/>
 		
 		<!-- KA -->
-		<polyline points="199.8,1.1 172.2,19.5 199.8,37.9 218.2,1.1 236.6,37.9" class="style1"/>
+		<polyline points="199.8,1.1 172.2,19.5 199.8,37.9 218.2,1.1 236.6,37.9" class="segment ka"/>
 		
 		<!-- O -->
-		<circle cx="255.1" cy="19.5" r="18.4" class="style1"/>
+		<circle cx="257" cy="19.5" r="18.4" class="segment o"/>
 		
 		<!-- KA -->
-		<polyline points="305.7,1.1 278.1,19.5 305.7,37.9 324.2,1.1 342.6,37.9" class="style1"/>
+		<polyline points="308.7,1.1 281.1,19.5 308.7,37.9 327.2,1.1 345.6,37.9" class="segment ka"/>
 	</g>
 </svg>
