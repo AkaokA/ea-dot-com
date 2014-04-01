@@ -79,7 +79,9 @@ a {
 	position: fixed;
 	top: 0;
 	left: 0;
-	margin: 20px;
+	padding: 20px;
+	background-color: rgba(255,255,255,0.9);
+	@include border-radius( 0px 0px 5px 0px );
 	@include transition( all 1s cubic-bezier(0.19, 1, 0.22, 1) );
 }
 
@@ -119,7 +121,6 @@ $largescaleipad: 0.75;
 			transform-style: preserve-3d;
 
 			@include transform( rotateX(40deg) rotateY(20deg) rotateZ(-20deg) scale3d($smallscale,$smallscale,$smallscale) );
-			
 			@include transition( all 0.6s cubic-bezier(0.19, 1, 0.22, 1) );
 			
 			&#ipad {
@@ -182,4 +183,3 @@ $largescaleipad: 0.75;
 		}
 	}
 }
-
