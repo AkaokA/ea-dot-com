@@ -35,4 +35,19 @@ function retina() {
 
 $(document).ready(function() {
 	retina();
+	
+	$('.bxslider').bxSlider({
+		mode: "horizontal",
+		slideWidth: 320,
+		slideMargin: 0,
+		responsive: false,
+		minSlides: 1,
+		maxSlides: 1,
+		speed: 700,
+		easing: "cubic-bezier(0.19, 1, 0.22, 1)",
+		pager: false,
+		controls: false,
+		auto: true,
+		pause: 2000
+	});
 });

@@ -22,26 +22,14 @@
 	<div id="wrapper">
 		
 	
-<script type="text/javascript" charset="utf-8" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
 
-<script type="text/javascript" charset="utf-8">
-	$(document).ready(function() {
-		
-		// Add the missing url to the text
-		$("#url").text(window.location.pathname);
-		
-		// Fix the css locations dynamically
-		$("head link").each(function() {
-			for (var i=0; i<window.location.pathname.split(/\//g).length-2; i++)
-				$(this).attr("href", "../" + $(this).attr("href"));
-		});
-		
-	})
-</script>
+					<ul class="bxslider">
+						<li><img src="../static/images/screenshots/rgb-loading-screen.png" width="320" height="568" /></li>
+						<li><img src="../static/images/screenshots/rgb-gallery.png" width="320" height="568" /></li>
+						<li><img src="../static/images/screenshots/500px-iphone-gallery.png" width="320" height="568" /></li>
+					</ul>
 
-<p>
-	Sorry the page <b id="url"></b> could not be found on this server.
-</p>
+
 
 	
 	</div>
