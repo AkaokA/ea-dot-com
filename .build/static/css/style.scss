@@ -45,7 +45,8 @@ body {
 
 h1 {
 	font-size: 24pt;
-	font-weight: 500;
+	font-weight: 300;
+	margin-bottom: 12pt;
 }
 
 h2 {
@@ -74,17 +75,6 @@ a {
 	}
 }
 
-#sidebar {
-	display: none;
-	position: fixed;
-	top: 0;
-	left: 0;
-	max-width: 320px;
-	padding: 20px;
-	background-color: rgba(255,255,255,0.9);
-	@include border-radius(2px);
-}
-
 #logo {
 	position: fixed;
 	top: 0;
@@ -99,39 +89,58 @@ a {
 	height: 100%;
 }
 
+header {
+	position: relative;
+	width: 100%;
+	margin-top: 260px;
+	text-align: center;
+	h1 {
+	}
+}
+
+$smallscale: 0.5;
+$largescale: 0.8;
+$largescaleipad: 0.75;
+
 #projectcontainer {
 	position: relative;
 	margin: 0 auto;
-	width: 960px;
+	width: 600px;
 
 	.project {
 		-webkit-perspective: 1600px;
 		perspective: 1600px;
-	
+		
 		figure {
-			@include transform( rotateX(40deg) rotateY(20deg) rotateZ(-20deg) scale3d(0.5,0.5,0.5) );
+			height: 800px;
+			margin-left: -200px;
+			
 			-webkit-transform-style: preserve-3d;
 			transform-style: preserve-3d;
-			-webkit-backface-visibility: hidden;
+
+			@include transform( rotateX(40deg) rotateY(20deg) rotateZ(-20deg) scale3d($smallscale,$smallscale,$smallscale) );
 			
 			@include transition( all 0.6s cubic-bezier(0.19, 1, 0.22, 1) );
 			
 			&#ipad {
-				@include transform( translateX(-50px) rotateX(40deg) rotateY(20deg) rotateZ(-20deg) scale3d(0.5,0.5,0.5) );
+				@include transform( rotateX(40deg) rotateY(20deg) rotateZ(-20deg) scale3d($smallscale,$smallscale,$smallscale) translateX(-80px) );
 			}	
 		}
+		
 		&:hover figure {
-			@include transform( rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(0.8,0.8,0.8) );
+			@include transform( rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d($largescale,$largescale,$largescale) );
 		}
 		&:hover figure#ipad {
-			@include transform( translateX(-100px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(0.75,0.75,0.75) );
+			@include transform( rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d($largescaleipad,$largescaleipad,$largescaleipad) translateX(-100px) );
 		}
 
 		h2 {
 			position: absolute;
-			top: 50%;
-			margin-top: -132px;
-			left: 576px;
+			top: 0;
+			left: 50%;
+			margin-top: 265px;
+			margin-left: 0px;
+			white-space: nowrap;
 			@include transition( all 0.8s cubic-bezier(0.19, 1, 0.22, 1) );
 		}
 		&:hover h2 {
@@ -139,11 +148,12 @@ a {
 		}
 	
 		summary {
-			width: 280px;
 			position: absolute;
-			top: 50%;
-			margin-top: -80px;
-			left: 576px;
+			width: 280px;
+			top: 0;
+			left: 50%;
+			margin-top: 340px;
+			margin-left: 0px;
 			opacity: 0;
 			
 			-webkit-transform-origin: top center;
@@ -155,7 +165,7 @@ a {
 		}
 		&:hover summary {
 			opacity: 1;
-			@include transform( translate(100px,-100px) rotateX(0) )
+			@include transform( translate(100px,-120px) rotateX(0) )
 		}
 	}
 	
