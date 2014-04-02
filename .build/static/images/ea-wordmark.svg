@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="tiny" xml:space="preserve"
-	width="190px" height="24px" x="0px" y="0px" viewBox="-1 -2 348 44" >
+	width="190px" height="24px" x="0px" y="0px" viewBox="-1 -2 350 44" >
 
 	<style>
 		.segment {
@@ -9,18 +9,16 @@
 			stroke-linecap: round;
 			stroke-miterlimit: 10;
 		
-			stroke-dasharray: 90;
-			stroke-dashoffset: 90;
+			stroke-dasharray: 94;
+			stroke-dashoffset: 94;
 
-			-webkit-animation: dash 2s ease-in-out 1;
-			animation: dash 2s ease-in-out 1;
-			-webkit-animation-fill-mode: forwards;
-			animation-fill-mode: forwards;
-		}
-		
-		.o, .ka {
-			stroke-dasharray: 150;
-			stroke-dashoffset: 150;
+			-webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+			   -moz-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+			    -ms-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+			        transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+
+			-webkit-animation: dash 2s ease-in-out 1 forwards;
+			animation: dash 2s ease-in-out 1 forwards;
 		}
 
 		@-webkit-keyframes dash {
@@ -33,6 +31,17 @@
 				stroke-dashoffset: 0;
 			}
 		}		
+				
+		.clickarea {
+			fill: rgba(255,255,255,0);
+			z-index: 999;
+		}
+		
+		.o, .ka {
+			stroke-dasharray: 150;
+			stroke-dashoffset: 150;
+		}
+
 	</style>
 	
 	<g>
@@ -45,7 +54,7 @@
 		<!-- R -->
 		<g>
 			<path d="M37.4 37.9V1.1c0 0 27.6-4.6 27.6 13.8 c0 7.1-9.2 12.6-13.8 12.6" class="segment"/>
-			<line x2="65.1" y2="37.9" x1="53.5" y1="27" class="segment"/>
+			<line x1="51" y1="28" x2="65.1" y2="37.9" class="segment"/>
 		</g>
 		
 		<!-- I -->
@@ -65,5 +74,7 @@
 		
 		<!-- KA -->
 		<polyline points="308.7,1.1 281.1,19.5 308.7,37.9 327.2,1.1 345.6,37.9" class="segment ka"/>
+		
+		<rect x="0" y="0" width="348" height="44" class="clickarea"/>
 	</g>
 </svg>

@@ -33,6 +33,30 @@ function retina() {
 	});
 }; 
 
+function animateLogo() {
+    var a = document.getElementById("logo");
+
+    //it's important to add an load event listener to the object, as it will load the svg doc asynchronously
+    a.addEventListener("load",function(){
+        var svgDoc = a.contentDocument; //get the inner DOM of alpha.svg
+        var svgRoot  = svgDoc.documentElement;
+				
+        //now we can query stuff with jquery like this
+        //note that we pass in the svgRoot as the context node!
+        
+        var logoSegment = $(".segment",svgRoot);
+        var logoClickArea = $(".clickarea",svgRoot);
+                
+        logoClickArea.click(function() {
+			// logo is clicked
+			/* console.log("hah"); */
+        })
+        
+    },false);
+}
+
 $(document).ready(function() {
 	retina();
+	
+	animateLogo();
 });
